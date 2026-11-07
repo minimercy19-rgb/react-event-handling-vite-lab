@@ -1,59 +1,43 @@
-# Lab: Password Input
+# React Event Handling Vite Lab – Password Input
 
-## Overview
-Now that you've learned how to work with events in React, it's time to build something and put those skills to use! Your goal for this lab is to add events in React to practice building event handling.
+A React + Vite lab that demonstrates event handling on a password input field and a submit button.  
+The app tracks typing in the input and mouse hover / leave events on the button to support anti-bot security measures.
 
-You are working with a client to create a new password input within their website. They would like to keep track of when the user is typing as well as when the user hovers over and away from the submit button. This is to help with checking the cadence of their typing and the movement of their mouse for the purpose of adding anti-botting security for their user. Your task is to add these three events and functions related to the events so that the security engineer can easily come in and apply their anti-bot measures easily.
+**Repository:** [https://github.com/minimercy19-rgb/react-event-handling-vite-lab](https://github.com/minimercy19-rgb/react-event-handling-vite-lab)
 
-## Task 1: Define the Problem
-- Create a password input that will track the changing of text and the mouse movements.
+## Features
 
-## Task 2: Determine the Design
-### Determine Component Tree
-```
-└── App
-    ├── PasswordInput
-    └── SubmitButton
-```
-### Isolate/Develop Design per Component
+- Password input field (`type="password"`)
+- “Submit Password” button
+- Console log when the user types in the input → `"Entering password…"`
+- Console log when the mouse enters the button → `"Mouse Entering"`
+- Console log when the mouse leaves the button → `"Mouse Exiting"`
 
-## Task 3: Develop the Code
-### Create Components
-#### PasswordInput:
-- Create `PasswordInput` React component
-- Render an `<input>` with a password type
+## Technologies Used
 
-#### SubmitButton:
-- Create a `SubmitButton` React component
-- Render a `<button>` with the text “Submit Password”
+- React 
+- Vite
+- Vitest + React Testing Library
 
-### Add Events to Elements
-#### PasswordInput:
-- Add a change event to the `<input>`
+## Getting Started
 
-#### SubmitButton:
-- Add a mouse enter event to the `<button>`
-- Add a mouse leave event to the `<button>`
+### Prerequisites
 
-### Create Event Handler Functions
-#### PasswordInput:
-- Create a `handleChange` function
-- Add a `console.log` to print out “Entering password…”
+- Node.js (v16 or higher recommended)
+- npm
 
-#### SubmitButton:
-- Create a `handleEnter` function
-- Add a `console.log` to print out “Mouse Entering”
-- Create a `handleLeave` function
-- Add a `console.log` to print out “Mouse Exiting”
+### Installation & Running
 
-### Call Function in Respective Event
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/minimercy19-rgb/react-event-handling-vite-lab.git
+   
+   cd react-event-handling-vite-lab
 
-## Task 4: Test and Refine
-- Debugging and testing during coding
+2. Install dependencies:
+   ```bash
+   npm install   
 
-## Task 5: Document and Maintain
-
-## Tools and Resources
-- **GitHub Repository:** [React Event Handling Vite Lab](https://github.com/learn-co-curriculum/react-event-handling-vite-lab)
-- **Event Handling in React:** [React Documentation](https://react.dev/learn/responding-to-events#adding-event-handlers)
-
+3. Start the development server:
+   ```bash
+   npm run dev
