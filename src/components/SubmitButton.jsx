@@ -11,10 +11,7 @@ function SubmitButton (){
     }
 
     return(
-        <>
-        <div onMouseEnter={handleEnter} onMouseLeave={handleLeave}>Click me</div>
-        <button >Submit Password</button>
-        </>
+        <button onMouseEnter={handleEnter} onMouseLeave={handleLeave}>Submit Password</button>
     )
 }
 
